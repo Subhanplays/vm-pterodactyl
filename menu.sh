@@ -94,15 +94,11 @@ menu() {
     echo -e "${C_BLD}${C_BLU}=====================================${C_RST}"
     echo -e "${C_BLD}${C_YLW}   SUBHAN HOSTING CONTROL CENTER${C_RST}"
     echo -e "${C_BLD}${C_BLU}=====================================${C_RST}"
-    echo -e "${C_BLD} 1)${C_RST} Setup Control Panel"
+    echo -e "${C_BLD} 1)${C_RST} Panel"
     echo -e "${C_BLD} 2)${C_RST} Install Wings"
-    echo -e "${C_BLD} 3)${C_RST} Update Services"
-    echo -e "${C_BLD} 4)${C_RST} Remove Installation"
-    echo -e "${C_BLD} 5)${C_RST} Blueprints Manager"
-    echo -e "${C_BLD} 6)${C_RST} Cloudflare Integrator"
-    echo -e "${C_BLD} 7)${C_RST} Theme Changer"
-    echo -e "${C_BLD} 8)${C_RST} System Report"
-    echo -e "${C_BLD} 9)${C_RST} Exit"
+    echo -e "${C_BLD} 3)${C_RST} Blueprints Manager"
+    echo -e "${C_BLD} 4)${C_RST} Theme Changer"
+    echo -e "${C_BLD} 5)${C_RST} Exit"
     echo -ne "\n${C_BLD}Choose an option [1-9]: ${C_RST}"
 }
 
@@ -113,15 +109,11 @@ while true; do
     menu
     read -r choice
     case $choice in
-        1) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/panel.sh" "Control Panel" ;;
+        1) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/panel.sh" "Panel" ;;
         2) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/wings.sh" "Wings" ;;
-        3) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/update.sh" "Update" ;;
-        4) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/remove.sh" "Uninstall" ;;
-        5) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/blueprints.sh" "Blueprints" ;;
-        6) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/cloudflare.sh" "Cloudflare" ;;
-        7) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/theme.sh" "Theme" ;;
-        8) show_system ;;
-        9) echo -e "${C_GRN}Goodbye!${C_RST}"; exit 0 ;;
+        3) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/blueprints.sh" "Blueprints" ;;
+        4) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/theme.sh" "Theme" ;;
+        5) echo -e "${C_GRN}Goodbye!${C_RST}"; exit 0 ;;
         *) echo -e "${C_RED}Invalid choice! Try again.${C_RST}"; sleep 1 ;;
     esac
 done
