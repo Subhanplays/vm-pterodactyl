@@ -109,10 +109,10 @@ while true; do
     menu
     read -r choice
     case $choice in
-        1) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/panel.sh" "Panel" ;;
-        2) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/wings.sh" "Wings" ;;
-        3) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/blueprints.sh" "Blueprints" ;;
-        4) fetch_and_run "https://raw.githubusercontent.com/YourGitHub/SubhanHosting/main/theme.sh" "Theme" ;;
+        1) fetch_and_run "https://raw.githubusercontent.com/Subhanplays/vm-pterodactyl/main/panel.sh" "Panel" ;;
+        2) fetch_and_run "https://raw.githubusercontent.com/Subhanplays/vm-pterodactyl/main/wings.sh" "Wings" ;;
+        3) fetch_and_run "https://raw.githubusercontent.com/Subhanplays/vm-pterodactyl/main/blueprint.sh" "Blueprints" ;;
+        4) fetch_and_run "https://raw.githubusercontent.com/Subhanplays/vm-pterodactyl/main/nabula.sh" "Theme" ;;
         5) echo -e "${C_GRN}Goodbye!${C_RST}"; exit 0 ;;
         *) echo -e "${C_RED}Invalid choice! Try again.${C_RST}"; sleep 1 ;;
     esac
